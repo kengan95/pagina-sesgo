@@ -14,6 +14,13 @@ body.dark-mode {
     background-color: #000;
     color: #fff;
   }
+body.dark-mode p{
+    color: #fff;
+}
+body.dark-mode a{
+    color: #fff;
+    border:  1px solid #fff;
+}
 
 header{
     width: 100%;
@@ -59,11 +66,11 @@ header .titulo{
  
 
  .boton2{
-    color: crimson;
+    color: #0c2943;
     margin-top: 40px;
  }
 
-.sesgoabajo{
+.sesgoabajo, .sesgoabajo1{
     z-index: 10;
     position: absolute;
     bottom: 0;
@@ -71,11 +78,9 @@ header .titulo{
     border-width: 0 0 35vh 100vw;
     border-style: solid;
     border-color: transparent transparent #fff transparent
-
-
 } 
 
-.sesgoarriba{
+.sesgoarriba, .sesgoarriba1{
     position: absolute;
     top: 0;
     left: 0;
@@ -83,7 +88,6 @@ header .titulo{
     border-style: solid;
     border-color: #fff transparent transparent transparent;
     z-index: 10;
-
 }  
 
 .contenedor{
@@ -205,7 +209,7 @@ header .titulo{
     padding-top: 130px;
 }
 
-.sesgoabajo-unico {
+.sesgoabajo-unico{
     z-index: 10;
     position: absolute;
     bottom: 0;
@@ -339,13 +343,70 @@ input[type="text"]:focus, input[type="email"]:focus{
    }
 }
 
+@media screen and (min-width:120px) {
+    .sesgoabajo {
+        border-width: 0 0 23vh 100vw;
+    }
+    .sesgoabajo1 {
+        border-width: 0 0 20vh 200vw;
+    }
+    .sesgoarriba {
+        border-width: 18vh 100vw 0 0;
+    }
+    .sesgoabajo-unico {
+        border-width: 0 0 22vh 100vw;
+    }
+    .sesgoarriba1 {
+        border-width: 10vh 100vw 0 0;
+    }
+}
+
 
 @media screen and (max-width:900px) {
     .card {
         width: 48%;
     }
+    .titulo-patrocinadores{
+        font-size: 50px;
+    }
+    .sesgoarriba {
+        border-width: 15vh 100vw 0 0;
+    }
+    .titulofooter{
+        font-size: 52px;
+    }
+    .encima h2{
+        font-size: 20px;
+    }
 }
-
+@media screen and (max-width:710px) {
+    .titulo {
+        font-size: 70px !important;
+    }
+    .titulofooter, .sobrenosotros{
+        font-size: 42px;
+    }
+}
+@media screen and (max-width:600px) {
+    .titulo {
+        font-size: 60px !important;
+    }
+    .subtitulo{
+        font-size: 35px !important;
+    }
+    .titulofooter{
+        font-size: 35px;
+    }
+    .subtitulo-patrocinadores, .slogan{
+        font-size: 20px;
+    }
+    .subtitulo-footer{
+        font-size: 13px;
+    }
+    .titulo-patrocinadores{
+        font-size: 45px;
+    }
+}
 @media screen and (max-width:610px) {
     header .textos {
         margin-top: 130px;
@@ -369,12 +430,22 @@ input[type="text"]:focus, input[type="email"]:focus{
         display: none;
     }
     .cliente {
-        width: 90%;
+        width: 85%;
         height: 200px;
         margin-bottom: 50px;
     }
+    .sesgoabajo-unico {
+        border-width: 0 0 15vh 100vw;
+    }
 }
-
+@media screen and (max-width:532px) {
+    .titulo {
+        font-size: 50px !important;
+    }
+    .subtitulo{
+        font-size: 30px !important;
+    }
+}
 @media screen and (max-width:380px) {
     header .textos {
         margin-top: 100px;
